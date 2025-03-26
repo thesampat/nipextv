@@ -9,6 +9,7 @@ body {
   font-weight: 400;
   line-height: 24px;
   visibility: visible;
+  padding: 0px 10px;
 }
 
 img {
@@ -595,13 +596,14 @@ a.meanmenu-reveal span:first-child {
 
 .hero-wrapper{
   position: relative;
+  height: 400px;
 }
 
 .hero-wrapper-img {
+  height: 100%;
   background-image: 
         linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
         url('./img/coverwatch.webp'); 
-  height: 400px;
   background-size: cover; 
   background-position: center; 
   
@@ -826,4 +828,23 @@ a.meanmenu-reveal span:first-child {
   background-image: url('./img/TVs/Cloud/Cloud1.jpeg'); /* Corrected syntax */
   background-size: cover; /* Optional: to cover the entire item */
   background-position: center; /* Optional: to center the image */
+}
+
+@media (max-width: 768px) {
+  .owl-carousel .item {
+      height: 200px;
+  }
+  .hero-content p{
+    display: none;
+  }
+  .hero-content h3{
+    line-height: 20px;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .hero-wrapper {
+      height: 200px;
+  }
 }
