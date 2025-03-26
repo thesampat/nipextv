@@ -10,6 +10,7 @@ body {
   line-height: 24px;
   visibility: visible;
 }
+
 img {
   max-width:100%;
   height:auto
@@ -310,7 +311,8 @@ ul{
 /*  2.  Header Area
 /*----------------------------------------*/
 .header-bottom {
-  background: #fff;
+  background: #ffffff;
+
 }
 .header.transparent .header-bottom {
   background: transparent;
@@ -591,32 +593,58 @@ a.meanmenu-reveal span:first-child {
 }
 
 
-
-.hero-wrapper {
-  padding: 150px 0;
+.hero-wrapper{
+  position: relative;
 }
-.hero-content{}
+
+.hero-wrapper-img {
+  background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+        url('./img/coverwatch.webp'); 
+  height: 400px;
+  background-size: cover; 
+  background-position: center; 
+  
+}
+
+.hero-wrapper-content {
+  position: absolute;
+  width: 90%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); 
+  color: white; 
+  text-align: center;
+  z-index: 2;
+  padding: 20px; 
+  border-radius: 5px; 
+}
+
 .hero-content h1 {
   display: block;
+  color: white;
   font-size: 50px;
   font-weight: 700;
   margin: 0 0 30px;
 }
 .hero-content h3 {
+  color: white;
   display: block;
   font-size: 30px;
   font-weight: 400;
   margin: 0 0 20px;
 }
 .hero-content p {
-  color: #C8A165;
+  font-size: 14px;
+  color: #f5b657;
   line-height: 24px;
   margin-bottom: 30px;
   text-align: center;
 }
 .hero-content p span {
-  color: #303030;
-  font-size: 14px;
+  color:white;
+  font-weight: bold;
+  font-size: 10px;
   font-weight: 400;
   margin: 0 10px;
   text-transform: uppercase;
@@ -629,6 +657,7 @@ a.meanmenu-reveal span:first-child {
 .hero-content .button:focus {
   color: #fff;
 }
+
 
 
 .demo-filter {
@@ -788,3 +817,13 @@ a.meanmenu-reveal span:first-child {
   margin-bottom: 0;
 }
 .footer-bottom .payment-method img{}
+
+
+.owl-carousel .item {
+  background-color: rgba(128, 128, 128, 0.412);
+  padding: 10px;
+  height: 300px;
+  background-image: url('./img/TVs/Cloud/Cloud1.jpeg'); /* Corrected syntax */
+  background-size: cover; /* Optional: to cover the entire item */
+  background-position: center; /* Optional: to center the image */
+}

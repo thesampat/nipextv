@@ -12,6 +12,9 @@
 
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
+    <link rel="stylesheet" href="/OwlCarousel2-master/dist/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="/OwlCarousel2-master/dist/assets/owl.theme.green.min.css" />
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700,900" rel="stylesheet" type="text/css" />
@@ -119,10 +122,10 @@
                           </div>
                         </div>
                       </li> -->
-					  <li><a href="#home">home</a></li>
-					  <li><a href="#about">about</a></li>
-					  <li><a href="#contact_us">contact us</a></li>
-					</ul>
+                      <li><a href="#home">home</a></li>
+                      <li><a href="#about">about</a></li>
+                      <li><a href="#contact_us">contact us</a></li>
+                    </ul>
                   </nav>
                 </div>
                 <div class="mobile-menu float-right hidden-sm hidden-md hidden-lg">
@@ -176,9 +179,9 @@
                           <li><a href="404.html">404</a></li>
                         </ul>
                       </li> -->
-					  <li><a href="#home">Home</a></li>
-					  <li><a href="#aboutus">About us</a></li>
-					  <li><a href="#contact us">Contact Us</a></li>
+                      <li><a href="#home">Home</a></li>
+                      <li><a href="#aboutus">About us</a></li>
+                      <li><a href="#contact us">Contact Us</a></li>
                     </ul>
                   </nav>
                 </div>
@@ -188,27 +191,45 @@
         </div>
       </div>
     </div>
+
     <!-- Hero
 ============================================ -->
-    <div class="hero-wrapper bg-off-white">
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-12">
-            <div class="hero-content text-center fix">
-              <h1></h1>
-              <h3>Your one-stop shop for high-quality TVs and advanced infrared induction technology.</h3>
-	<p>Explore our innovative products designed to enhance your viewing and cooking experience.</p>
-              <p><span>Smart TVs</span><i class="zmdi zmdi-plus"></i><span>Cloud TVs</span><i class="zmdi zmdi-plus"></i><span>WebOS TVs</span><i class="zmdi zmdi-plus"></i><span>LED TVs</span><i class="zmdi zmdi-plus"></i><span>Infrared Induction</span><i class="zmdi zmdi-plus"></i><span>Coolers</span></p>
-              <a href="https://1.envato.market/RJ39b" class="button large color-hover" target="_blank">Buy Now</a>
-              <a href="#demos" class="button large color-hover">view all demo</a>
-            </div>
-          </div>
+    <div class="hero-wrapper">
+      <div class="hero-wrapper-img"></div>
+      <div class="hero-wrapper-content">
+        <div class="hero-content text-center fix">
+          <h1></h1>
+          <h3>Your one-stop shop for high-quality TVs and advanced infrared induction technology.</h3>
+          <p>Explore our innovative products designed to enhance your viewing and cooking experience.</p>
+          <p class="tagsproducts">
+            <span>Smart TVs</span><i class="zmdi zmdi-plus"></i><span>Cloud TVs</span><i class="zmdi zmdi-plus"></i><span>WebOS TVs</span><i class="zmdi zmdi-plus"></i><span>LED TVs</span><i class="zmdi zmdi-plus"></i><span>Infrared Induction</span><i class="zmdi zmdi-plus"></i><span>Coolers</span>
+          </p>
+          <!-- <a href="https://1.envato.market/RJ39b" class="button large color-hover" target="_blank">Buy Now</a>
+          <a href="#demos" class="button large color-hover">view all demo</a> -->
         </div>
       </div>
     </div>
+
+    <br />
+    <!-- carousel -->
+    <div class="owl-carousel owl-theme owl-loaded">
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+    </div>
+    <br />
     <!-- Demo Section
 ============================================ -->
-    <div id="demos" class="padding-90 text-center fix">
+    <div id="demos" class="padding-90 text-center fix" style="background-color: rgba(233, 226, 226, 0.59)">
       <div class="container">
         <div class="row">
           <div class="section-title text-center col-xs-12">
@@ -216,7 +237,7 @@
           </div>
           <div class="demo-filter col-x-12">
             <button class="filter active" data-filter="all">All</button>
-			<button class="filter" data-filter=".smart">Smart TVs</button>
+            <button class="filter" data-filter=".smart">Smart TVs</button>
             <button class="filter" data-filter=".cloud">Cloud TVs</button>
             <button class="filter" data-filter=".webos">WebOS TVs</button>
           </div>
@@ -243,7 +264,9 @@
         </div>
       </div>
     </div>
-	
+
+    <br />
+
     <!-- rtl Section
 ============================================ -->
     <!-- <div class="rtl-section">
@@ -288,6 +311,7 @@
         </div>
       </div>
     </div> -->
+    <br />
     <div class="counter-section fix">
       <div style="background-color: rgb(226, 226, 226); height: 312px" class="col-md-3 col-sm-6 col-xs-12 sin-counter text-center">
         <div class="table">
@@ -326,7 +350,7 @@
         </div>
       </div>
     </div>
-
+    <br />
 
     <!-- Feature Section
 ============================================ -->
@@ -334,25 +358,25 @@
       <div class="container">
         <div class="row">
           <div class="section-title text-center col-xs-12">
-			<h1>Features</h1>
-			<p>Discover the advantages of our high-quality televisions and advanced infrared induction technology. Here are some key features:</p>
+            <h1>Features</h1>
+            <p>Discover the advantages of our high-quality televisions and advanced infrared induction technology. Here are some key features:</p>
           </div>
           <div class="feature-list col-xs-12">
             <ul>
-				<li>High-definition</li>
-				<li>built-in streaming apps</li>
-				<li>Multiple screen sizes available</li>
-				<li>Energy-efficient design</li>
-				<li>Easy-to-use remote control</li>
-				<li>Multiple HDMI and USB ports</li>
-				<li>Vibrant color reproduction</li>
-				<li>Built-in Wi-Fi connectivity</li>
-				<li>Voice control compatibility</li>
-				<li>Customizable picture settings</li>
-				<li>Durable and sleek design</li>
-				<li>Fast response time for gaming</li>
-				<li>Comprehensive user manual included</li>
-				<li>Warranty and customer support available</li>
+              <li>High-definition</li>
+              <li>built-in streaming apps</li>
+              <li>Multiple screen sizes available</li>
+              <li>Energy-efficient design</li>
+              <li>Easy-to-use remote control</li>
+              <li>Multiple HDMI and USB ports</li>
+              <li>Vibrant color reproduction</li>
+              <li>Built-in Wi-Fi connectivity</li>
+              <li>Voice control compatibility</li>
+              <li>Customizable picture settings</li>
+              <li>Durable and sleek design</li>
+              <li>Fast response time for gaming</li>
+              <li>Comprehensive user manual included</li>
+              <li>Warranty and customer support available</li>
             </ul>
           </div>
         </div>
@@ -371,26 +395,32 @@
         </div>
       </div>
     </div>
-
-    <!-- JS -->
-
-    <!-- jQuery JS
-============================================ -->
     <script src="js/vendor/jquery-1.12.0.min.js"></script>
-    <!-- Bootstrap JS
-============================================ -->
     <script src="js/bootstrap.min.js"></script>
-    <!-- Mean Menu JS
-============================================ -->
     <script src="js/jquery.meanmenu.min.js"></script>
-    <!-- mixitup JS
-============================================ -->
     <script src="js/jquery.mixitup.min.js"></script>
-    <!-- ScrollUP JS
-============================================ -->
     <script src="js/jquery.scrollup.min.js"></script>
-    <!-- Main JS
-============================================ -->
     <script src="js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="/OwlCarousel2-master/dist/owl.carousel.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".owl-carousel").owlCarousel({
+          loop: true,
+          margin: 20,
+          nav: true,
+          autoplay: true,
+          autoplayTimeout: 1000,
+          autoplayHoverPause: true,
+          // autoWidth:true,
+          // items:4,
+          responsive: {
+            0: { items: 1 },
+            600: { items: 2 },
+            1000: { items: 3 },
+          },
+        });
+      });
+    </script>
   </body>
 </html>
